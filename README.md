@@ -1,0 +1,2 @@
+# fnmotivation-web
+# nextjs

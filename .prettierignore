@@ -1,0 +1,40 @@
+# Ignore artifacts:
+build
+coverage
+
+# Ignore all HTML files:
+*.html
+
+matrix(1, 0, 0, 0, 1, 0, 0, 0, 1);
+
+// prettier-ignore
+matrix(
+  1, 0, 0,
+  0, 1, 0,
+  0, 0, 1
+)
+
+{{! prettier-ignore }}
+<div>
+  "hello! my parent was ignored"
+  {{#my-crazy-component     "shall"     be="preserved"}}
+    <This
+      is  =  "also preserved as is"
+    />
+  {{/my-crazy-component}}
+</div>
+
+<!-- prettier-ignore -->
+<div         class="x"       >hello world</div            >
+
+<!-- prettier-ignore-attribute -->
+<div
+  (mousedown)="       onStart    (    )         "
+  (mouseup)="         onEnd      (    )         "
+></div>
+
+<!-- prettier-ignore-attribute (mouseup) -->
+<div
+  (mousedown)="onStart()"
+  (mouseup)="         onEnd      (    )         "
+></div>
