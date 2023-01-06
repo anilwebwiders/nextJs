@@ -86,8 +86,8 @@ const Register = () => {
                  
                 </div>
                 <form onSubmit={handleSubmit}>
-                 <div class="row">
-                  <div class="col-lg-6 col-md-12">
+                 <div className="row">
+                  <div className="col-lg-6 col-md-12">
                   <div className="form-group">
                     <label>Username</label>
                     <input
@@ -123,7 +123,7 @@ const Register = () => {
                     </p> */}
                   </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div className="col-lg-6 col-md-12">
                   <div className="form-group ">
                     <label>Full Name</label>
                     <input
@@ -135,8 +135,8 @@ const Register = () => {
                     />
                   </div>
                  
-                  <div class="row">
-                  <div class="col-md-6">
+                  <div className="row">
+                  <div className="col-md-6">
                   <div className="form-group ">
                     <label>Gender</label>
                     <input
@@ -148,7 +148,7 @@ const Register = () => {
                     />
                   </div>
                   </div>
-                  <div class="col-md-6">
+                  <div className="col-md-6">
                   <div className="form-group ">
                     <label>Date of Birth</label>
                     <input
@@ -211,7 +211,7 @@ const Register = () => {
                     />
                   </div>
                   <div className="form-group">
-                  <div class="under-line-or"><h5>Please Sign up with one of Your Existing third party Accounts</h5></div>
+                  <div className="under-line-or"><h5>Please Sign up with one of Your Existing third party Accounts</h5></div>
                     <div className="social-media">
                     <div className="social-btn">
                       <RegisterSocial />

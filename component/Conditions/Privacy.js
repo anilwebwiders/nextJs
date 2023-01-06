@@ -18,21 +18,21 @@ const Privacy = () => {
 
             <h5 className='table__of__contents__titel'>TABLE OF CONTENTS</h5><br></br>
 
-            {/* <div id="accordion" class="myaccordion">
-                           <div class="card">
-                              <div class="card-header" id="headingOne">
-                                <h2 class="mb-0">
-                                  <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            {/* <div id="accordion" className="myaccordion">
+                           <div className="card">
+                              <div className="card-header" id="headingOne">
+                                <h2 className="mb-0">
+                                  <button className="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                     1. WHAT INFORMATION DO WE COLLECT?
-                                    <span class="fa-stack fa-sm">
-                                        <i class="fa fa-stack-1x fa-inverse fa-minus"></i>
+                                    <span className="fa-stack fa-sm">
+                                        <i className="fa fa-stack-1x fa-inverse fa-minus"></i>
                                     </span>
                                   </button>
                                 </h2>
                               </div>
-                              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" >
-                                <div class="card-body">
-                                  <div class="table__of__contents__text">
+                              <div id="collapseOne" className="collapse" aria-labelledby="headingOne" data-parent="#accordion" >
+                                <div className="card-body">
+                                  <div className="table__of__contents__text">
                                       <p><span>In Short</span>: : We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</p>
                                       <ul>
                                           <li><span>Consent</span>: We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</li>
@@ -49,20 +49,20 @@ const Privacy = () => {
                                 </div>
                               </div>
                            </div>
-                           <div class="card">
-                              <div class="card-header" id="headingTwo">
-                                <h2 class="mb-0">
-                                  <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                           <div className="card">
+                              <div className="card-header" id="headingTwo">
+                                <h2 className="mb-0">
+                                  <button className="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     2. HOW DO WE USE YOUR INFORMATION?
-                                    <span class="fa-stack fa-2x">
-                                        <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
+                                    <span className="fa-stack fa-2x">
+                                        <i className="fa fa-plus fa-stack-1x fa-inverse"></i>
                                     </span>
                                   </button>
                                 </h2>
                               </div>
-                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                <div class="card-body">
-                                 <div class="table__of__contents__text">
+                              <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div className="card-body">
+                                 <div className="table__of__contents__text">
                                     <p><span>In Short</span>: : We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</p>
                                     <ul>
                                         <li><span>Consent</span>: We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</li>
@@ -79,20 +79,20 @@ const Privacy = () => {
                                 </div>
                               </div>
                            </div>
-                           <div class="card">
-                              <div class="card-header" id="headingThree">
-                                <h2 class="mb-0">
-                                  <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                           <div className="card">
+                              <div className="card-header" id="headingThree">
+                                <h2 className="mb-0">
+                                  <button className="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?
-                                    <span class="fa-stack fa-2x">
-                                      <i class="fas fa-stack-1x fa-inverse fa-plus"></i>
+                                    <span className="fa-stack fa-2x">
+                                      <i className="fas fa-stack-1x fa-inverse fa-plus"></i>
                                     </span>
                                   </button>
                                 </h2>
                               </div>
-                              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion" >
-                                <div class="card-body">
-                                 <div class="table__of__contents__text">
+                              <div id="collapseThree" className="collapse" aria-labelledby="headingThree" data-parent="#accordion" >
+                                <div className="card-body">
+                                 <div className="table__of__contents__text">
                                     <p><span>In Short</span>: : We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</p>
                                     <ul>
                                         <li><span>Consent</span>: We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</li>
@@ -109,20 +109,20 @@ const Privacy = () => {
                                 </div>
                               </div>
                            </div>
-                           <div class="card">
-                              <div class="card-header" id="heading4">
-                                <h2 class="mb-0">
-                                  <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapseThree">
+                           <div className="card">
+                              <div className="card-header" id="heading4">
+                                <h2 className="mb-0">
+                                  <button className="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapseThree">
                                     4. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?
-                                    <span class="fa-stack fa-2x">
-                                      <i class="fas fa-stack-1x fa-inverse fa-plus"></i>
+                                    <span className="fa-stack fa-2x">
+                                      <i className="fas fa-stack-1x fa-inverse fa-plus"></i>
                                     </span>
                                   </button>
                                 </h2>
                               </div>
-                              <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion" >
-                                <div class="card-body">
-                                 <div class="table__of__contents__text">
+                              <div id="collapse4" className="collapse" aria-labelledby="heading4" data-parent="#accordion" >
+                                <div className="card-body">
+                                 <div className="table__of__contents__text">
                                     <p><span>In Short</span>: : We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</p>
                                     <ul>
                                         <li><span>Consent</span>: We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</li>
@@ -139,20 +139,20 @@ const Privacy = () => {
                                 </div>
                               </div>
                            </div>
-                           <div class="card">
-                              <div class="card-header" id="heading5">
-                                <h2 class="mb-0">
-                                  <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapseThree">
+                           <div className="card">
+                              <div className="card-header" id="heading5">
+                                <h2 className="mb-0">
+                                  <button className="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapseThree">
                                     5. HOW DO WE HANDLE YOUR SOCIAL LOGINS?
-                                    <span class="fa-stack fa-2x">
-                                      <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                                    <span className="fa-stack fa-2x">
+                                      <i className="fas fa-plus fa-stack-1x fa-inverse"></i>
                                     </span>
                                   </button>
                                 </h2>
                               </div>
-                              <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
-                                <div class="card-body">                                  
-                                 <div class="table__of__contents__text">
+                              <div id="collapse5" className="collapse" aria-labelledby="heading5" data-parent="#accordion">
+                                <div className="card-body">                                  
+                                 <div className="table__of__contents__text">
                                     <p><span>In Short</span>: : We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</p>
                                     <ul>
                                         <li><span>Consent</span>: We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</li>
@@ -169,20 +169,20 @@ const Privacy = () => {
                                 </div>
                               </div>
                            </div>
-                           <div class="card">
-                              <div class="card-header" id="heading6">
-                                <h2 class="mb-0">
-                                  <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapseThree">
+                           <div className="card">
+                              <div className="card-header" id="heading6">
+                                <h2 className="mb-0">
+                                  <button className="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapseThree">
                                     6. WHAT IS OUR STANCE ON THIRD-PARTY WEBSITES?
-                                    <span class="fa-stack fa-2x">
-                                      <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                                    <span className="fa-stack fa-2x">
+                                      <i className="fas fa-plus fa-stack-1x fa-inverse"></i>
                                     </span>
                                   </button>
                                 </h2>
                               </div>
-                              <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion">
-                                <div class="card-body">
-                                 <div class="table__of__contents__text">
+                              <div id="collapse6" className="collapse" aria-labelledby="heading6" data-parent="#accordion">
+                                <div className="card-body">
+                                 <div className="table__of__contents__text">
                                     <p><span>In Short</span>: : We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</p>
                                     <ul>
                                         <li><span>Consent</span>: We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</li>
@@ -199,20 +199,20 @@ const Privacy = () => {
                                 </div>
                               </div>
                            </div>
-                           <div class="card">
-                              <div class="card-header" id="heading7">
-                                <h2 class="mb-0">
-                                  <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                           <div className="card">
+                              <div className="card-header" id="heading7">
+                                <h2 className="mb-0">
+                                  <button className="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
                                     7. HOW LONG DO WE KEEP YOUR INFORMATION?
-                                    <span class="fa-stack fa-2x">
-                                      <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                                    <span className="fa-stack fa-2x">
+                                      <i className="fas fa-plus fa-stack-1x fa-inverse"></i>
                                     </span>
                                   </button>
                                 </h2>
                               </div>
-                              <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion">
-                                <div class="card-body">
-                                 <div class="table__of__contents__text">
+                              <div id="collapse7" className="collapse" aria-labelledby="heading7" data-parent="#accordion">
+                                <div className="card-body">
+                                 <div className="table__of__contents__text">
                                     <p><span>In Short</span>: : We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</p>
                                     <ul>
                                         <li><span>Consent</span>: We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</li>
@@ -229,20 +229,20 @@ const Privacy = () => {
                                 </div>
                               </div>
                            </div>
-                           <div class="card">
-                              <div class="card-header" id="heading8">
-                                <h2 class="mb-0">
-                                  <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                           <div className="card">
+                              <div className="card-header" id="heading8">
+                                <h2 className="mb-0">
+                                  <button className="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
                                     8. HOW DO WE KEEP YOUR INFORMATION SAFE?
-                                    <span class="fa-stack fa-2x">
-                                      <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                                    <span className="fa-stack fa-2x">
+                                      <i className="fas fa-plus fa-stack-1x fa-inverse"></i>
                                     </span>
                                   </button>
                                 </h2>
                               </div>
-                              <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
-                                <div class="card-body">
-                                 <div class="table__of__contents__text">
+                              <div id="collapse8" className="collapse" aria-labelledby="heading8" data-parent="#accordion">
+                                <div className="card-body">
+                                 <div className="table__of__contents__text">
                                     <p><span>In Short</span>: : We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</p>
                                     <ul>
                                         <li><span>Consent</span>: We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</li>
@@ -259,20 +259,20 @@ const Privacy = () => {
                                 </div>
                               </div>
                            </div>
-                           <div class="card">
-                              <div class="card-header" id="heading9">
-                                <h2 class="mb-0">
-                                  <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                           <div className="card">
+                              <div className="card-header" id="heading9">
+                                <h2 className="mb-0">
+                                  <button className="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
                                     9. WHAT ARE YOUR PRIVACY RIGHTS?
-                                    <span class="fa-stack fa-2x">
-                                      <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                                    <span className="fa-stack fa-2x">
+                                      <i className="fas fa-plus fa-stack-1x fa-inverse"></i>
                                     </span>
                                   </button>
                                 </h2>
                               </div>
-                              <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion">
-                                <div class="card-body">
-                                 <div class="table__of__contents__text">
+                              <div id="collapse9" className="collapse" aria-labelledby="heading9" data-parent="#accordion">
+                                <div className="card-body">
+                                 <div className="table__of__contents__text">
                                     <p><span>In Short</span>: : We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</p>
                                     <ul>
                                         <li><span>Consent</span>: We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</li>
@@ -289,20 +289,20 @@ const Privacy = () => {
                                 </div>
                               </div>
                            </div>
-                           <div class="card">
-                              <div class="card-header" id="heading10">
-                                <h2 class="mb-0">
-                                  <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                           <div className="card">
+                              <div className="card-header" id="heading10">
+                                <h2 className="mb-0">
+                                  <button className="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
                                     10. CONTROLS FOR DO-NOT-TRACK FEATURES
-                                    <span class="fa-stack fa-2x">
-                                      <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                                    <span className="fa-stack fa-2x">
+                                      <i className="fas fa-plus fa-stack-1x fa-inverse"></i>
                                     </span>
                                   </button>
                                 </h2>
                               </div>
-                              <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordion">
-                                <div class="card-body">
-                                 <div class="table__of__contents__text">
+                              <div id="collapse10" className="collapse" aria-labelledby="heading10" data-parent="#accordion">
+                                <div className="card-body">
+                                 <div className="table__of__contents__text">
                                     <p><span>In Short</span>: : We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</p>
                                     <ul>
                                         <li><span>Consent</span>: We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</li>
@@ -319,20 +319,20 @@ const Privacy = () => {
                                 </div>
                               </div>
                            </div>
-                           <div class="card">
-                              <div class="card-header" id="heading11">
-                                <h2 class="mb-0">
-                                  <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                           <div className="card">
+                              <div className="card-header" id="heading11">
+                                <h2 className="mb-0">
+                                  <button className="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
                                     11. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
-                                    <span class="fa-stack fa-2x">
-                                      <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                                    <span className="fa-stack fa-2x">
+                                      <i className="fas fa-plus fa-stack-1x fa-inverse"></i>
                                     </span>
                                   </button>
                                 </h2>
                               </div>
-                              <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordion">
-                                <div class="card-body">
-                                 <div class="table__of__contents__text">
+                              <div id="collapse11" className="collapse" aria-labelledby="heading11" data-parent="#accordion">
+                                <div className="card-body">
+                                 <div className="table__of__contents__text">
                                     <p><span>In Short</span>: : We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</p>
                                     <ul>
                                         <li><span>Consent</span>: We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</li>
@@ -349,20 +349,20 @@ const Privacy = () => {
                                 </div>
                               </div>
                            </div>
-                           <div class="card">
-                              <div class="card-header" id="heading12">
-                                <h2 class="mb-0">
-                                  <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                           <div className="card">
+                              <div className="card-header" id="heading12">
+                                <h2 className="mb-0">
+                                  <button className="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
                                     12. DO WE MAKE UPDATES TO THIS POLICY?
-                                    <span class="fa-stack fa-2x">
-                                      <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                                    <span className="fa-stack fa-2x">
+                                      <i className="fas fa-plus fa-stack-1x fa-inverse"></i>
                                     </span>
                                   </button>
                                 </h2>
                               </div>
-                              <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordion">
-                                <div class="card-body">
-                                 <div class="table__of__contents__text">
+                              <div id="collapse12" className="collapse" aria-labelledby="heading12" data-parent="#accordion">
+                                <div className="card-body">
+                                 <div className="table__of__contents__text">
                                     <p><span>In Short</span>: : We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</p>
                                     <ul>
                                         <li><span>Consent</span>: We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</li>
@@ -379,20 +379,20 @@ const Privacy = () => {
                                 </div>
                               </div>
                            </div>
-                           <div class="card">
-                              <div class="card-header" id="heading13">
-                                <h2 class="mb-0">
-                                  <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                           <div className="card">
+                              <div className="card-header" id="heading13">
+                                <h2 className="mb-0">
+                                  <button className="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
                                     13. HOW CAN YOU CONTACT US ABOUT THIS POLICY?
-                                    <span class="fa-stack fa-2x">
-                                      <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                                    <span className="fa-stack fa-2x">
+                                      <i className="fas fa-plus fa-stack-1x fa-inverse"></i>
                                     </span>
                                   </button>
                                 </h2>
                               </div>
-                              <div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordion">
-                                <div class="card-body">
-                                 <div class="table__of__contents__text">
+                              <div id="collapse13" className="collapse" aria-labelledby="heading13" data-parent="#accordion">
+                                <div className="card-body">
+                                 <div className="table__of__contents__text">
                                     <p><span>In Short</span>: : We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</p>
                                     <ul>
                                         <li><span>Consent</span>: We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</li>
@@ -409,20 +409,20 @@ const Privacy = () => {
                                 </div>
                               </div>
                            </div>
-                           <div class="card">
-                              <div class="card-header" id="heading14">
-                                <h2 class="mb-0">
-                                  <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                           <div className="card">
+                              <div className="card-header" id="heading14">
+                                <h2 className="mb-0">
+                                  <button className="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
                                     14. HOW CAN YOU REVIEW, UPDATE OR DELETE THE DATA WE COLLECT FROM YOU?
-                                    <span class="fa-stack fa-2x">
-                                      <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                                    <span className="fa-stack fa-2x">
+                                      <i className="fas fa-plus fa-stack-1x fa-inverse"></i>
                                     </span>
                                   </button>
                                 </h2>
                               </div>
-                              <div id="collapse14" class="collapse" aria-labelledby="heading14" data-parent="#accordion">
-                                <div class="card-body">
-                                 <div class="table__of__contents__text">
+                              <div id="collapse14" className="collapse" aria-labelledby="heading14" data-parent="#accordion">
+                                <div className="card-body">
+                                 <div className="table__of__contents__text">
                                     <p><span>In Short</span>: : We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</p>
                                     <ul>
                                         <li><span>Consent</span>: We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. We may process or share your data that we hold based on the following legal basis:</li>

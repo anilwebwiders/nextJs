@@ -9,6 +9,7 @@ import ReportModelNew from "../../StoryDetails/StoryDetialsElem/ReportModelNew";
 import { deleteData, getFetchData } from "../../../../utils/api-client";
 import DeleteModal from "../../../../component//Modal/Delete/DeleteModal";
 const CommonStory = ({ story,title }) => {
+  
    const auth = useSelector((state) => state.auth);
    const token = useSelector((state) => state.auth.token);
    const [modalDelete, setModalDelete] = useState(false);
@@ -54,7 +55,8 @@ const CommonStory = ({ story,title }) => {
                         <div className="post-card-avtar-info">
                            <div className="post-card-avtar-left">
                               <div className="post-card-avtar-image">
-                                 <img src={story.avatar ? story.avatar : '/post-card-avtar-image-1.png'} alt="" /></div>
+                              <picture>
+                                 <img src={story.avatar ? story.avatar : '/post-card-avtar-image-1.png'} alt="" /></picture></div>
                               <h3>{story.username}<span>4/22/2022</span></h3>
                            </div>
 
@@ -91,7 +93,7 @@ const CommonStory = ({ story,title }) => {
                         <Link href={"/story/" + story.story_id + "/" + story?.title?.replace(/\s/g, "-").substring(0, 60)}>
                            <div className="post-card-avtar-content">
                               <h4>{story.community_title}</h4>
-                              <a href="#">Alchohol Addiction</a>
+                              <a href="#">{story.community_title}</a>
                               <p>{story.title}</p>
                            </div>
                         </Link>
@@ -103,7 +105,9 @@ const CommonStory = ({ story,title }) => {
                               {/* <p>{story.short_story === 'null' ? <div>{story.body.substring(0, 65).replace(/<\/?[a-zA-Z]+>/gi,'').replace('&nbsp;', ' ')}</div> : story.short_story.substring(0, 25)}</p> */}
                            </div>
                            <div className="image-holder">
+                           <picture>
                               <img src={story.post_thumbnail} alt="postImage" className="img-fluid content-image cropped" />
+                              </picture>
 
                            </div>
                            <div className="post-card-option">

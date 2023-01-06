@@ -71,57 +71,45 @@ const Search = () => {
                 onChange={handleSearch}
               />
               <a>
-                <img src="/search-icon.svg" alt="searchicon"/>
+                <img src="/search-icon.svg" alt="searchicon" />
               </a>
             </form>
           </div>
         </div>
         <div className="innerbanner serach_bx">
-          <div className="innerbanner__img"> <img src="/innerbanner-img.jpg" alt=""/> </div>
+          <div className="innerbanner__img"> <img src="/innerbanner-img.jpg" alt="" /> </div>
           <h1 className="banner-title">Search</h1>
           <div className="banner-search">
             <div className="search-box">
-                <div className="custom-select-box">
-                    <div className="select-box"><select
-            className="form-control"
-            name="category"
-            onChange={handleType}
-             >
-            <option selected value="story">
-              Story
-            </option>
-            <option value="article">Article</option>
-            <option value="user">User</option>
-          </select></div>
-                </div>
-                <div className="search-right">
-                    <input type="text"  className="form-control pl-5 pr-5"
-                placeholder="Search"
-                onKeyPress={(e) => {
-                  e.key === "Enter" && e.preventDefault();
-                }}
-                defaultValue={search}
-                onChange={handleSearch}
-              />
-                    <button ><img src="/search-icon (1).svg" alt=""/> Search</button>
-                </div>
+              <div className="custom-select-box">
+                <div className="select-box"><select
+                  className="form-control"
+                  name="category"
+                  onChange={handleType}
+                >
+                  <option selected value="story">
+                    Story
+                  </option>
+                  <option value="article">Article</option>
+                  <option value="user">User</option>
+                </select></div>
+              </div>
+              <div className="search-right">
+                <input type="text" className="form-control pl-5 pr-5"
+                  placeholder="Search"
+                  onKeyPress={(e) => {
+                    e.key === "Enter" && e.preventDefault();
+                  }}
+                  defaultValue={search}
+                  onChange={handleSearch}
+                />
+                <button ><img src="/search-icon (1).svg" alt="" /> Search</button>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* <div className="box-search">
-          <select
-            className="form-control"
-            name="category"
-            onChange={handleType}
-             >
-            <option selected value="story">
-              Story
-            </option>
-            <option value="article">Article</option>
-            <option value="user">User</option>
-          </select>
-        </div> */}
+       
 
         {type == "story" && (
           <>

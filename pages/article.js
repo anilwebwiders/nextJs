@@ -77,21 +77,21 @@ const PostArticle = () => {
 
       <section className="post-story-sec">
         <div className="container-fluid">
-        <div class="row">
-                  <div class="col-lg-12">
-                      <div class="post-article">
-                        <img src="/post-article-img.jpg" class="post-article-img" alt=""/>
-                        <h3 class="post-article__titel">The Top 25 Mental Health Articles</h3>
-                        <div class="source">Source: <a href="#">https://www.psycom.net/mental-health-wellbeing/top-25--articles</a></div>
+        <div className="row">
+                  <div className="col-lg-12">
+                      <div className="post-article">
+                        <img src="/post-article-img.jpg" className="post-article-img" alt=""/>
+                        <h3 className="post-article__titel">The Top 25 Mental Health Articles</h3>
+                        <div className="source">Source: <a href="#">https://www.psycom.net/mental-health-wellbeing/top-25--articles</a></div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper est sagittis, eget nec donec feugiat. Mi adipiscing in enim integer. Ut rhoncus euismod semper eget at sapien tincidunt. Tellus nunc a, orci bibendum in neque, hac lacus commodo. Sit adipiscing elementum</p>
-                        <div class="post-form">
+                        <div className="post-form">
                             <label className="select">Select Community Categories</label>
-                            <div class="select-box"><select class="dropdownpost">
+                            <div className="select-box"><select className="dropdownpost">
                                 <option>Select Community</option>
                             </select></div>
                         </div>
-                        <div class="post-article-link-form-button">
-                            <button class="btn-send">Post Article</button>
+                        <div className="post-article-link-form-button">
+                            <button className="btn-send">Post Article</button>
                         </div>
                       </div>
                   </div>

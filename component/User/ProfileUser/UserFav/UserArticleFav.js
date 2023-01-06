@@ -96,6 +96,7 @@ const UserArticleFav = () => {
               ))}
             </tbody>
           </table>
+          {article.length >= 12 && (
           <h4
             className="text-warning text-center p-5"
             style={{ cursor: "pointer" }}
@@ -103,6 +104,7 @@ const UserArticleFav = () => {
           >
             {load ? <Preloader /> : "Show More"}
           </h4>
+           )}
         </div>
       </div>
     </>

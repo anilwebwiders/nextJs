@@ -25,7 +25,7 @@ matrix(
 </div>
 
 <!-- prettier-ignore -->
-<div         class="x"       >hello world</div            >
+<div         className="x"       >hello world</div            >
 
 <!-- prettier-ignore-attribute -->
 <div

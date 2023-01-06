@@ -72,8 +72,8 @@ const Login = () => {
                       className="form-control"
                       onChange={handleChangeInput}
                     />
-                    {/* <a href="JavaScript:void(0);" class="icon-view">
-                    <i class="fa fa-eye" aria-hidden="true"></i>
+                    {/* <a href="JavaScript:void(0);" className="icon-view">
+                    <i className="fa fa-eye" aria-hidden="true"></i>
                         </a> */}
                     {/* <span className="arror-sms">
                       Wrong password. Please enter a correct password
@@ -100,7 +100,7 @@ const Login = () => {
                       value="Login"
                     />
                   </div>
-                  <div class="under-line-or">
+                  <div className="under-line-or">
                      <h5>or</h5>
                   </div>
                   <div className="form-group">

@@ -22,7 +22,6 @@ const RecentStory = ({ type, fetchData, storyPage }) => {
     // console.log(data);
     setStories(data.data);
     setStoryCount(data.count);
-
     setloader(false);
   }, [storyPage, type]);
 

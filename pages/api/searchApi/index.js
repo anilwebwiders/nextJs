@@ -29,13 +29,22 @@ const search = async (req, res) => {
   const sqlUserCount = `SELECT count(*) as count FROM users WHERE ${
     search ? userSearch : ""
   }  status = 1 and user_id != 37;`;
-  const sqlUserSearch = `SELECT user_id,full_name,username,email,avatar FROM users WHERE ${
+
+  let NewSql = "";
+  if(user_id){
+    NewSql = `, (select count(follow_id) from followers where follower_id = ${user_id} and followers.user_id = users.user_id) as is_follow, (select count(story_id) from stories where stories.user_id = users.user_id) as total_story, (select count(follow_id) from followers where followers.user_id = users.user_id) as total_follower`;
+
+
+
+  }
+
+  const sqlUserSearch = `SELECT user_id,full_name,username,email,avatar ${NewSql} FROM users WHERE ${
     search ? userSearch : ""
   }  status = 1 and user_id != 37 ORDER BY user_id DESC LIMIT 12 OFFSET ${show};`;
   const sqlArticleCount = `SELECT count(*) as count
   FROM articles JOIN users u on articles.user_id = u.user_id JOIN communities c on articles.community_id = c.community_id JOIN articles_likes_counter alc on articles.article_id = alc.article_id JOIN articles_comments_counter acc on articles.article_id = acc.article_id WHERE u.status = 1 AND (articles.title LIKE  ('%${search}%') OR articles.source_text LIKE ('%${search}%') OR articles.description LIKE ('%${search}%') )`;
   const sqlArticleSearch = `SELECT articles.article_id,title,redirect_link,source_text,img_link,description,c.community_id,c.community_title,articles.created_at,u.user_id,full_name,username,email,total_likes,total_comments FROM articles JOIN users u on articles.user_id = u.user_id JOIN communities c on articles.community_id = c.community_id JOIN articles_likes_counter alc on articles.article_id = alc.article_id JOIN articles_comments_counter acc on articles.article_id = acc.article_id WHERE u.status = 1 AND (articles.title LIKE  ('%${search}%') OR articles.source_text LIKE ('%${search}%') OR articles.community_id LIKE ('%${search}%') ) ORDER BY articles.article_id  DESC LIMIT 12 OFFSET ${show};`;
-  const sqlArticleSearchWithUser = `SELECT articles.article_id,title,redirect_link,source_text,img_link,description,c.community_id,c.community_title,articles.created_at,u.user_id,full_name,username,email,total_likes,total_comments,(SELECT count(*) FROM articles_likes WHERE articles_likes.article_id = articles.article_id AND articles_likes.user_id =${user_id}) AS liked,(SELECT count(*) FROM articles_bookmarks WHERE articles_bookmarks.article_id = articles.article_id AND articles_bookmarks.user_id =${user_id}) AS bookmarked,(SELECT count(*) FROM followers WHERE followers.user_id = u.user_id AND followers.follower_id =${user_id}) AS followed
+  const sqlArticleSearchWithUser = `SELECT articles.article_id,title,redirect_link,source_text,img_link,description,c.community_id,c.community_title,articles.created_at,u.user_id,u.avatar,full_name,username,email,total_likes,total_comments,(SELECT count(*) FROM articles_likes WHERE articles_likes.article_id = articles.article_id AND articles_likes.user_id =${user_id}) AS liked,(SELECT count(*) FROM articles_bookmarks WHERE articles_bookmarks.article_id = articles.article_id AND articles_bookmarks.user_id =${user_id}) AS bookmarked,(SELECT count(*) FROM followers WHERE followers.user_id = u.user_id AND followers.follower_id =${user_id}) AS followed
   FROM articles JOIN users u on articles.user_id = u.user_id JOIN communities c on articles.community_id = c.community_id JOIN articles_likes_counter alc on articles.article_id = alc.article_id JOIN articles_comments_counter acc on articles.article_id = acc.article_id WHERE u.status = 1 AND (articles.title LIKE  ('%${search}%') OR articles.source_text LIKE ('%${search}%') OR articles.community_id LIKE ('%${search}%') )  ORDER BY articles.article_id DESC  LIMIT 12 OFFSET ${show};`;
 
   db.query(
@@ -75,6 +84,7 @@ const search = async (req, res) => {
         }
       }
       if (type === "user") {
+        
         db.query(sqlUserSearch, (err, documents) => {
           if (err) return res.status(500).json({ err: err.message });
           res.send({ data: documents, count: count });

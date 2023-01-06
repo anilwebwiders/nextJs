@@ -35,7 +35,7 @@ const UserFollowers = ({ auth }) => {
     <a className="view-all">{followers.length} followers</a>
   </Link>
   <div className="profile-search">
-  <div class="select-box"><select class="dropdownpost-profile">
+  <div className="select-box"><select className="dropdownpost-profile">
     <option>Sort by</option>
     </select>
   </div>
@@ -52,14 +52,14 @@ const UserFollowers = ({ auth }) => {
   </form>
   </div>
 </div>
-<div class="row pt-4">
+<div className="row pt-4">
 {followers.map((user) => (
-	<div class="col-lg-3 col-md-4 col-sm-6" key={user.user_id}>
-		<div class="followers-item">
-			<div class="followers-img">
+	<div className="col-lg-3 col-md-4 col-sm-6" key={user.user_id}>
+		<div className="followers-item">
+			<div className="followers-img">
 				<img src={user.avatar} alt="avatar" />
 			</div>
-			<div class="followers-right">
+			<div className="followers-right">
          <Link
          href={{
                pathname: `/user/[id]/[username]`,
@@ -71,7 +71,7 @@ const UserFollowers = ({ auth }) => {
 				<h6>{user.full_name}</h6>
             </Link>
 				<p>@{user.username}</p>
-				<a href="#" class="followers-right-icon">
+				<a href="#" className="followers-right-icon">
 					<img src="/followers-right-icon1.png" alt="" />
 				</a>
 			</div>
@@ -116,7 +116,7 @@ const UserFollowers = ({ auth }) => {
             ))}
           </tbody>
         </table>*/}
-        {followers.length > 12 && (
+        {followers.length >= 12 && (
         <h4
             className="text-warning text-center p-5"
             style={{ cursor: "pointer" }}
@@ -126,7 +126,7 @@ const UserFollowers = ({ auth }) => {
           </h4>
         )}
      
-      {/*<div class="d-flex justify-content-center p-5"><ul class="pagination"><li class="page-item disabled"><a class="page-link" tabindex="0" role="button" aria-disabled="true" aria-label="Previous page" rel="prev">&lt;</a></li><li class="page-item active"><a role="button" class="page-link" tabindex="0" aria-label="Page 1 is your current page" aria-current="page">1</a></li><li class="page-item"><a role="button" class="page-link" tabindex="0" aria-label="Page 2">2</a></li><li class="page-item"><a role="button" class="page-link" tabindex="0" aria-label="Page 3">3</a></li><li class="page-item"><a role="button" class="page-link" tabindex="0" aria-label="Page 4">4</a></li><li class="page-item"><a role="button" class="page-link" tabindex="0" aria-label="Page 5">5</a></li><li class="page-item"><a class="page-link" tabindex="0" role="button" aria-disabled="false" aria-label="Next page" rel="next">&gt;</a></li></ul></div>*/}
+      {/*<div className="d-flex justify-content-center p-5"><ul className="pagination"><li className="page-item disabled"><a className="page-link" tabindex="0" role="button" aria-disabled="true" aria-label="Previous page" rel="prev">&lt;</a></li><li className="page-item active"><a role="button" className="page-link" tabindex="0" aria-label="Page 1 is your current page" aria-current="page">1</a></li><li className="page-item"><a role="button" className="page-link" tabindex="0" aria-label="Page 2">2</a></li><li className="page-item"><a role="button" className="page-link" tabindex="0" aria-label="Page 3">3</a></li><li className="page-item"><a role="button" className="page-link" tabindex="0" aria-label="Page 4">4</a></li><li className="page-item"><a role="button" className="page-link" tabindex="0" aria-label="Page 5">5</a></li><li className="page-item"><a className="page-link" tabindex="0" role="button" aria-disabled="false" aria-label="Next page" rel="next">&gt;</a></li></ul></div>*/}
 
     </div>
   );

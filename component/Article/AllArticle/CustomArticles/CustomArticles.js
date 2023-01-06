@@ -15,10 +15,10 @@ const CustomArticles = ({ articles }) => {
               <Link href={/article/ + art.article_id}>
                 <a className="heart-icon">
                   <h3>{art.title.substring(0, 60)}...</h3>
-                  <a href="#" class="like-icon love-like-icon"></a>
+                  <a href="#" className="like-icon love-like-icon"></a>
                 </a>
               </Link>
-              <div class="article-box-info">
+              <div className="article-box-info">
                            <ul>
                               <li><a href="#">{art.community_title}</a></li>
                               <li><p>By:<strong> alberte</strong></p></li>

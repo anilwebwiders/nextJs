@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
     <div>
-      <HeadData />
+      <HeadData/>
       <main>
         {!auth.user.username && <Banner />}
         <section className="article-sec">

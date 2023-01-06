@@ -67,17 +67,17 @@ const ResetPassword = () => {
                         onChange={(e) => setCode(e.target.value)}
                       />
                     </div> */}
-                   <div class="form-group mb-4">
+                   <div className="form-group mb-4">
                     <label>Current Password</label>
-                   <input type="password" name="password" class="form-control" placeholder="**********" />
+                   <input type="password" name="password" className="form-control" placeholder="**********" />
                    </div>
-                   <div class="form-group mb-4">
+                   <div className="form-group mb-4">
                     <label>New Password</label>
-                   <input type="password" name="password" class="form-control" placeholder="**********" />
+                   <input type="password" name="password" className="form-control" placeholder="**********" />
                    </div>
-                   <div class="form-group mb-4">
+                   <div className="form-group mb-4">
                     <label>Confirm New Password</label>
-                   <input type="password" name="password" class="form-control" placeholder="**********" />
+                   <input type="password" name="password" className="form-control" placeholder="**********" />
                    </div>
                     <div className="form-group">
                       <input

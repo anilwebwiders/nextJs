@@ -196,7 +196,7 @@ const EditStory = (props) => {
                                <div className="drop-zone">
                                 <label className="upload-file">
                                   {" "}
-                                  <img src="/post-story-upload-thumbnail.svg" alt="imageUplaod" class="w-75 mt-2"/>
+                                  <img src="/post-story-upload-thumbnail.svg" alt="imageUplaod" className="w-75 mt-2"/>
                                   <input type="file"  accept="image/png , image/gif, image/jpeg, image/jpg" name="file" onChange={imageHandler} />
                                 </label>
                                 {isuploadedImage && (

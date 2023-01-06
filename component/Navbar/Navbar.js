@@ -10,7 +10,7 @@ import { getFetchData } from "../../utils/api-client";
 import NotiUi from "./NotiUi";
 import { useSWRInfinite } from "swr";
 import axios from "axios";
-
+import communityData from "../../store/consts/community";
 
 
 
@@ -236,15 +236,15 @@ const Navbar = () => {
                         <Link href="/communities">
                           <a className={"nav-link" + isActive("/communities")}>
                           Communities
-                          <span class="sub-menu-toggle"></span>
+                          <span className="sub-menu-toggle"></span>
                           </a>
                           
                         </Link>
                         <ul className="menu-bar">
-                          <li>
+                          {/* <li>
                             <Link href="/communities">
                             <a className={"nav-link" + isActive("/communities")}>
-                              <div class="color-box-icon">
+                              <div className="color-box-icon">
                                 <span>Drug<br></br>Addiction</span>
                                 <img src="/color-box-image-1.png" alt=""/>
                               </div>
@@ -254,7 +254,7 @@ const Navbar = () => {
                           <li>
                             <Link href="/communities">
                             <a className={"nav-link" + isActive("/communities")}>
-                              <div class="color-box-icon">
+                              <div className="color-box-icon">
                                 <span>Alcohol<br></br>Addiction</span>
                                 <img src="/color-box-image-2.png" alt=""/>
                               </div>
@@ -264,7 +264,7 @@ const Navbar = () => {
                           <li>
                             <Link href="/communities">
                             <a className={"nav-link" + isActive("/communities")}>
-                              <div class="color-box-icon">
+                              <div className="color-box-icon">
                                 <span>Eating<br></br>Disorder</span>
                                 <img src="/color-box-image-3.png" alt=""/>
                               </div>
@@ -274,7 +274,7 @@ const Navbar = () => {
                           <li>
                             <Link href="/communities">
                             <a className={"nav-link" + isActive("/communities")}>
-                              <div class="color-box-icon">
+                              <div className="color-box-icon">
                                 <span>Weight<br></br>Issues</span>
                                 <img src="/color-box-image-4.png" alt=""/>
                               </div>
@@ -284,7 +284,7 @@ const Navbar = () => {
                           <li>
                             <Link href="/communities">
                             <a className={"nav-link" + isActive("/communities")}>
-                              <div class="color-box-icon">
+                              <div className="color-box-icon">
                                 <span>Heart<br></br>Disease</span>
                                 <img src="/color-box-image-5.png" alt=""/>
                               </div>
@@ -294,7 +294,7 @@ const Navbar = () => {
                           <li>
                             <Link href="/communities">
                             <a className={"nav-link" + isActive("/communities")}>
-                              <div class="color-box-icon">
+                              <div className="color-box-icon">
                                 <span>Anxiety</span>
                                 <img src="/color-box-image-6.png" alt=""/>
                               </div>
@@ -304,7 +304,7 @@ const Navbar = () => {
                           <li>
                             <Link href="/communities">
                             <a className={"nav-link" + isActive("/communities")}>
-                              <div class="color-box-icon">
+                              <div className="color-box-icon">
                                 <span>Depression</span>
                                 <img src="/color-box-image-7.png" alt=""/>
                               </div>
@@ -314,7 +314,7 @@ const Navbar = () => {
                           <li>
                             <Link href="/communities">
                             <a className={"nav-link" + isActive("/communities")}>
-                              <div class="color-box-icon">
+                              <div className="color-box-icon">
                                 <span>Insecurity</span>
                                 <img src="/color-box-image-8.png" alt=""/>
                               </div>
@@ -324,7 +324,7 @@ const Navbar = () => {
                           <li>
                             <Link href="/communities">
                             <a className={"nav-link" + isActive("/communities")}>
-                              <div class="color-box-icon">
+                              <div className="color-box-icon">
                                 <span>Mental Health</span>
                                 <img src="/color-box-image-9.png" alt=""/>
                               </div>
@@ -334,7 +334,7 @@ const Navbar = () => {
                           <li>
                             <Link href="/communities">
                             <a className={"nav-link" + isActive("/communities")}>
-                              <div class="color-box-icon">
+                              <div className="color-box-icon">
                                 <span>Stress</span>
                                 <img src="/color-box-image-10.png" alt=""/>
                               </div>
@@ -344,13 +344,28 @@ const Navbar = () => {
                           <li>
                             <Link href="/communities">
                             <a className={"nav-link" + isActive("/communities")}>
-                              <div class="color-box-icon">
+                              <div className="color-box-icon">
                                 <span>Smoking</span>
                                 <img src="/color-box-image-11.png" alt=""/>
                               </div>
                             </a>
                           </Link>
-                          </li>
+                          </li> */}
+                          {communityData.map((info, index) => (
+                            <li key={index}>
+                              <Link href={
+                                  `/communities/story/${info.community_id}/${info.community_title.replace(/\s/g, "-")}`
+                                }>
+                                <a className={"nav-link" + isActive("/communities")}>
+                                  <div className="color-box-icon">
+                                  <span>{info.community_title}</span>
+                                  <img src={`/color-box-image-${info.community_id}.png`} alt=""/>
+                                  </div>
+                                </a>
+                              </Link>
+                            </li>
+                          ))}
+                          
                         </ul>
                       </li>
                       <li className="nav-item">

@@ -72,7 +72,7 @@ const ArticleCommentShow = ({ comment, getComments }) => {
         </div>
         <a href={"/user/" + user_id + "/" + username}>
              <div><h3>{username}</h3> 
-             <span class="follow"><img src="/follow-icon.svg" alt=""/>Follow</span>
+             <span className="follow"><img src="/follow-icon.svg" alt=""/>Follow</span>
              </div>
              <span><small className="date_comment">{moment(created_at.split("T")[0]).format("MM/DD/YY")}</small></span>
           </a>

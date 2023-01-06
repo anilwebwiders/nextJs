@@ -61,7 +61,7 @@ const StoryComments = ({ story_id }) => {
             />
           )}
           <div className="comment-show">
-          <h2 class="recent-comments__titel">Recent Comments (25)</h2>
+          <h2 className="recent-comments__titel">Recent Comments (25)</h2>
           {comments.map((cm) => (
             <div className="ref">
               <StoryCommentShow

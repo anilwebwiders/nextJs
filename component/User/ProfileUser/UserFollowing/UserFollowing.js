@@ -82,7 +82,7 @@ const UserFollowing = ({ auth }) => {
           <a className="view-all">{following.length} following</a>
         </Link>
         <div className="profile-search">
-          <div class="select-box"><select class="dropdownpost-profile">
+          <div className="select-box"><select className="dropdownpost-profile">
             <option>Sort by</option>
           </select>
           </div>
@@ -99,12 +99,12 @@ const UserFollowing = ({ auth }) => {
           </form>
         </div>
       </div>
-      <div class="row pt-4">
+      <div className="row pt-4">
         {following.map((user) => (
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="followers-item">
-              <div class="followers-img"><img src={user.avatar} alt="user img" /></div>
-              <div class="followers-right">
+          <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className="followers-item">
+              <div className="followers-img"><img src={user.avatar} alt="user img" /></div>
+              <div className="followers-right">
                 <Link
                   href={{
                     pathname: `/user/[id]/[username]`,
@@ -126,7 +126,7 @@ const UserFollowing = ({ auth }) => {
                     },
                   }}
                 >
-                  <a href="#" class="followers-right-icon"><img src="/following-icon.png" alt="" /></a>
+                  <a href="#" className="followers-right-icon"><img src="/following-icon.png" alt="" /></a>
                 </Link>
               </div>
             </div>
@@ -134,8 +134,8 @@ const UserFollowing = ({ auth }) => {
         ))}
       </div>
 
-      <div class="d-flex justify-content-center p-5">
-        {following.length > 12 && (
+      <div className="d-flex justify-content-center p-5">
+        {following.length >= 12 && (
           <h4
             className="button_show"
             style={{ cursor: "pointer" }}
@@ -144,27 +144,27 @@ const UserFollowing = ({ auth }) => {
             {load ? <Preloader /> : "Show More"}
           </h4>
         )}
-        {/* <ul class="pagination">
-               <li class="page-item disabled">
-                  <a class="page-link" tabindex="0" role="button" aria-disabled="true" aria-label="Previous page" rel="prev">&lt;</a>
+        {/* <ul className="pagination">
+               <li className="page-item disabled">
+                  <a className="page-link" tabindex="0" role="button" aria-disabled="true" aria-label="Previous page" rel="prev">&lt;</a>
                </li>
-               <li class="page-item active">
-                  <a role="button" class="page-link" tabindex="0" aria-label="Page 1 is your current page" aria-current="page">1</a>
+               <li className="page-item active">
+                  <a role="button" className="page-link" tabindex="0" aria-label="Page 1 is your current page" aria-current="page">1</a>
                </li>
-               <li class="page-item">
-                  <a role="button" class="page-link" tabindex="0" aria-label="Page 2">2</a>
+               <li className="page-item">
+                  <a role="button" className="page-link" tabindex="0" aria-label="Page 2">2</a>
                </li>
-               <li class="page-item">
-                  <a role="button" class="page-link" tabindex="0" aria-label="Page 3">3</a>
+               <li className="page-item">
+                  <a role="button" className="page-link" tabindex="0" aria-label="Page 3">3</a>
                </li>
-               <li class="page-item">
-                  <a role="button" class="page-link" tabindex="0" aria-label="Page 4">4</a>
+               <li className="page-item">
+                  <a role="button" className="page-link" tabindex="0" aria-label="Page 4">4</a>
                </li>
-               <li class="page-item">
-                  <a role="button" class="page-link" tabindex="0" aria-label="Page 5">5</a>
+               <li className="page-item">
+                  <a role="button" className="page-link" tabindex="0" aria-label="Page 5">5</a>
                </li>
-               <li class="page-item">
-                  <a class="page-link" tabindex="0" role="button" aria-disabled="false" aria-label="Next page" rel="next">&gt;</a>
+               <li className="page-item">
+                  <a className="page-link" tabindex="0" role="button" aria-disabled="false" aria-label="Next page" rel="next">&gt;</a>
                </li>
             </ul> */}
       </div>

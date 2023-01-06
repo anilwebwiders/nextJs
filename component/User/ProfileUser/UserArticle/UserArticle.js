@@ -74,7 +74,7 @@ const UserArticle = ({ auth }) => {
           <a className="view-all">{article.length} Articles Posted</a>
         </Link>
         <div className="profile-search">
-          <div class="select-box"><select class="dropdownpost-profile">
+          <div className="select-box"><select className="dropdownpost-profile">
             <option>Sort by</option>
           </select>
           </div>
@@ -93,71 +93,17 @@ const UserArticle = ({ auth }) => {
       </div>
       <div className="profile-posts-inner">
         {searchTxt.length === 0 ? (
-          // <div className="table">
-          //   <table>
-          //     <thead>
-          //       <tr>
-          //         <th>Title</th>
-          //         <th>
-          //           Category <img src="/double-arrow.svg" alt="" />
-          //         </th>
-          //         <th>
-          //           Date <img src="/double-arrow.svg" alt="" />
-          //         </th>
-          //         <th>Action</th>
-          //       </tr>
-          //     </thead>
-          //     <tbody>
-          //       {article.map((article) => (
-          //         <tr key={article.article_id}>
-          //           <Link href={"/article/" + article.article_id}>
-          //             <a>
-          //               <td>
-          //                 <p>{article.title.substring(0, 60)}...</p>
-          //               </td>
-          //             </a>
-          //           </Link>
-          //           <td>{article.community_title}</td>
-          //           <td>
-          //             {moment(article.created_at.split("T")[0]).format(
-          //               "MM/DD/YY"
-          //             )}
-          //           </td>
-          //           <td>
-          //             <ul>
-          //               <li>
-          //                 <a
-          //                   style={{ cursor: "pointer" }}
-          //                   className="delet-btn"
-          //                   onClick={() => toggleDelete(article.article_id, article.title)}
-          //                 >
-          //                   Delete
-          //                 </a>
-          //               </li>
-          //             </ul>
-          //           </td>
-          //         </tr>
-          //       ))}
-          //     </tbody>
-          //   </table>
-          //   <h4
-          //     className="text-warning text-center p-5"
-          //     style={{ cursor: "pointer" }}
-          //     onClick={handleShow}
-          //   >
-          //     {load ? <Preloader /> : "Show More"}
-          //   </h4>
-          // </div>
-          <div class="table-border-radius">
-            <div class="table-responsive">
-              <table class="table">
+         
+          <div className="table-border-radius">
+            <div className="table-responsive">
+              <table className="table">
                 <thead>
                   <tr>
                     <th>Post Title</th>
                     <th>Category</th>
                     {/*<th>Source</th>*/}
                     <th>Date</th>
-                    <th><div class="group-btn">Action</div></th>
+                    <th><div className="group-btn">Action</div></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -170,7 +116,7 @@ const UserArticle = ({ auth }) => {
                         "MM/DD/YY"
                       )}</td>
                       <td>
-                        <div class="group-btn">
+                        <div className="group-btn">
                           <Link href={"/article/" + article.article_id}>
                             <img src="/action1.png" alt="" />
                           </Link>
@@ -207,7 +153,7 @@ const UserArticle = ({ auth }) => {
           />
         )}
       </div>
-      {/*<div class="d-flex justify-content-center p-5"><ul class="pagination"><li class="page-item disabled"><a class="page-link" tabindex="0" role="button" aria-disabled="true" aria-label="Previous page" rel="prev">&lt;</a></li><li class="page-item active"><a role="button" class="page-link" tabindex="0" aria-label="Page 1 is your current page" aria-current="page">1</a></li><li class="page-item"><a role="button" class="page-link" tabindex="0" aria-label="Page 2">2</a></li><li class="page-item"><a role="button" class="page-link" tabindex="0" aria-label="Page 3">3</a></li><li class="page-item"><a role="button" class="page-link" tabindex="0" aria-label="Page 4">4</a></li><li class="page-item"><a role="button" class="page-link" tabindex="0" aria-label="Page 5">5</a></li><li class="page-item"><a class="page-link" tabindex="0" role="button" aria-disabled="false" aria-label="Next page" rel="next">&gt;</a></li></ul></div> */}
+      {/*<div className="d-flex justify-content-center p-5"><ul className="pagination"><li className="page-item disabled"><a className="page-link" tabindex="0" role="button" aria-disabled="true" aria-label="Previous page" rel="prev">&lt;</a></li><li className="page-item active"><a role="button" className="page-link" tabindex="0" aria-label="Page 1 is your current page" aria-current="page">1</a></li><li className="page-item"><a role="button" className="page-link" tabindex="0" aria-label="Page 2">2</a></li><li className="page-item"><a role="button" className="page-link" tabindex="0" aria-label="Page 3">3</a></li><li className="page-item"><a role="button" className="page-link" tabindex="0" aria-label="Page 4">4</a></li><li className="page-item"><a role="button" className="page-link" tabindex="0" aria-label="Page 5">5</a></li><li className="page-item"><a className="page-link" tabindex="0" role="button" aria-disabled="false" aria-label="Next page" rel="next">&gt;</a></li></ul></div> */}
     </>
 
   );

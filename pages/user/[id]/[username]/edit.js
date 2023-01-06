@@ -64,6 +64,7 @@ const Edit = () => {
       image: useAv ? '/avatar.png' : uploadedImage ? uploadedImage : avatar,
       user_id: auth.user.user_id,
     };
+    //console.log("🚀 ~ file: edit.js:68 ~ handleSubmit ~ ", postedData)
     dispatch(notifyLoading(true));
     const data = await patchData(`userApi/update`, postedData, auth.token);
     dispatch(notifyLoading(false));
@@ -90,7 +91,7 @@ const Edit = () => {
       <div>
         <HeadData />
         <div className="wrapper edit_profile">
-        <div class="innerbanner__img" id="imagePreview2">
+        <div className="innerbanner__img" id="imagePreview2">
       
           </div>
           <section className="profile-sec profile-edit">

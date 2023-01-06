@@ -16,7 +16,6 @@ export const getFetchData = async (url, token) => {
             'Authorization': token
         }
     })
-
     const data = await res.json()
     return data
 }

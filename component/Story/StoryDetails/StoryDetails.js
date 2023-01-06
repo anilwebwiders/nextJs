@@ -224,8 +224,8 @@ const StoryDetails = ({ story }) => {
         </div>      
         <div className="story-page-text">
             <div className="storyBody">
-              {/* {story.body.split('\n').map((str, index) => <p key={index}>{str}</p>)} */}
-              <div>{finalBody.split('\n').map((str, index) => <p key={index}>{str}</p>)}</div>
+              {story.body.split('\n').map((str, index) => <p key={index} dangerouslySetInnerHTML={{__html: str}}></p>)}
+              {/* <div>{finalBody.split('\n').map((str, index) => <p key={index}>{str}</p>)}</div> */}
             </div>
           </div>
         {/* Tags */}

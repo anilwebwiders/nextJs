@@ -11,8 +11,9 @@ const ArticleLike = ({article_id, auth}) => {
       `articleApi/like?article_id=${article_id}&user_id=${auth.user.user_id}`
     );
     setLikeCount(data.length);
-    const likeData =
-      data && data.filter((id) => id.user_id == auth.user.user_id);
+    console.log(data)
+    
+    const likeData =data &&  data.filter((id) => id.user_id == auth.user.user_id);
     likeData.length === 0 ? setLikeLight(false) : setLikeLight(true);
   }, [article_id, auth]);
 

@@ -98,11 +98,11 @@ const NotificationSettings = () => {
                 <PreloaderLg />
               ) : (
             <form onSubmit={submit}>
-            <div class="notifications-settings-wrap">
-                        <div class="notifications-settings-item">
-                            <h3 class="notifications-settings-item__titel">Platform Notification Settings</h3>
-                            <div class="story-post">
-                              <h3 class="story-post-titel">Story Post</h3>
+            <div className="notifications-settings-wrap">
+                        <div className="notifications-settings-item">
+                            <h3 className="notifications-settings-item__titel">Platform Notification Settings</h3>
+                            <div className="story-post">
+                              <h3 className="story-post-titel">Story Post</h3>
                               {Object.entries(mainNoti)
                         .slice(0, 3)
                         .map(([key, value]) => {
@@ -124,7 +124,7 @@ const NotificationSettings = () => {
                             </>
                           );
                         })}
-                              <h3 class="story-post-titel">Article Post</h3>
+                              <h3 className="story-post-titel">Article Post</h3>
                               {Object.entries(mainNoti)
                         .slice(3, 6)
                         .map(([key, value]) => {
@@ -169,10 +169,10 @@ const NotificationSettings = () => {
                         })}
                            </div>
                         </div>
-                        <div class="notifications-settings-item">
-                           <h3 class="notifications-settings-item__titel">Email Notification Settings</h3>
-                           <div class="story-post">
-                             <h3 class="story-post-titel">Story Post</h3>
+                        <div className="notifications-settings-item">
+                           <h3 className="notifications-settings-item__titel">Email Notification Settings</h3>
+                           <div className="story-post">
+                             <h3 className="story-post-titel">Story Post</h3>
                              {Object.entries(mainNoti)
                         .slice(0, 3)
                         .map(([key, value]) => {
@@ -194,7 +194,7 @@ const NotificationSettings = () => {
                             </>
                           );
                         })}
-                             <h3 class="story-post-titel">Article Post</h3>
+                             <h3 className="story-post-titel">Article Post</h3>
                              {Object.entries(mainNoti)
                         .slice(3, 6)
                         .map(([key, value]) => {

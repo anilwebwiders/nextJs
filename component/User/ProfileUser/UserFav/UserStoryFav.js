@@ -100,6 +100,7 @@ const UserStoryFav = () => {
             ))}
           </tbody>
         </table>
+        {story.length >= 12 && (
         <h4
           className="text-warning text-center p-5"
           style={{ cursor: "pointer" }}
@@ -107,6 +108,7 @@ const UserStoryFav = () => {
         >
           {load ? <Preloader /> : "Show More"}
         </h4>
+        )}
       </div>
     </div>
   );
